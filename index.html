@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Basic Online Store</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-puMcFZ6X+HlyXkUJcQvMSc32oOK4iNg4kOg7glurFSz4GpoVJ0aGgyCqVqXJvuH65ZqRxDWv/Jm5O1+x1Jdz5g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
+<body class="bg-gray-100">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md px-6 py-4">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <!-- Logo / Brand -->
+      <div class="text-2xl font-extrabold text-blue-600 tracking-tight flex items-center gap-2">
+        <span>SimpleStore</span> <span class="text-3xl">🛒</span>
+      </div>
+      <!-- Cart Button -->
+      <button
+        id="view-cart"
+        class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-5 py-2 rounded-lg shadow-md transition duration-300"
+      >
+        View Cart
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="bg-[#e0e5ec] py-20 px-6 text-center text-gray-800">
+    <div class="max-w-4xl mx-auto">
+      <div
+        class="bg-[#e0e5ec] rounded-3xl shadow-[inset_8px_8px_16px_#bec4d1,inset_-8px_-8px_16px_#ffffff] p-10 sm:p-16"
+      >
+        <h1 class="text-4xl sm:text-5xl font-extrabold mb-6 text-gray-800">
+          🛒 Welcome to <span class="text-blue-600">SimpleStore</span>
+        </h1>
+        <p class="text-lg sm:text-xl text-gray-600 leading-relaxed">
+          Discover quality products at unbeatable prices. Shop with ease and
+          style.
+        </p>
+        <div class="mt-8">
+          <a
+            href="#product-list"
+            class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-xl shadow-md transition duration-300"
+            >Browse Products</a
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <main class="py-12 px-4 sm:px-6 lg:px-8 bg-gray-100">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-3xl font-extrabold text-gray-900 mb-8 text-center">
+        🛍️ Featured Products
+      </h2>
+
+      <div
+        id="product-list"
+        class="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
+      >
+        <!-- Product cards will be inserted here by JS -->
+      </div>
+    </div>
+  </main>
+
+  <!-- About Us -->
+  <section class="bg-white py-16 px-6 sm:px-12 lg:px-32 text-gray-800">
+    <div class="max-w-5xl mx-auto text-center">
+      <h2 class="text-4xl font-extrabold mb-6 text-gray-900">About Us</h2>
+      <p class="text-lg leading-relaxed text-gray-600">
+        At
+        <span class="font-semibold text-blue-600">SimpleStore</span>, we’re
+        passionate about delivering high-quality, affordable products directly
+        to your screen. Powered by <span class="font-semibold text-green-600"
+          >API</span
+        >, we bring you a seamless shopping experience with reliable product
+        listings, a user-friendly cart, and instant browsing—all in one place.
+      </p>
+      <p class="mt-6 text-base text-gray-500">
+        Our mission is simple:
+        <span class="italic text-blue-500"
+          >to make online shopping effortless and enjoyable</span
+        >. Whether you're browsing the latest gadgets or everyday essentials,
+        we've got you covered with a clean and intuitive interface.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact Us -->
+  <section class="bg-gray-50 py-16 px-6 sm:px-12 lg:px-32 text-gray-800">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-4xl font-extrabold text-gray-900 mb-4">Contact Us</h2>
+      <p class="text-lg text-gray-600 mb-8">
+        We’d love to hear from you! Reach out to us for any questions or
+        feedback.
+      </p>
+
+      <div class="bg-white shadow-lg rounded-xl p-8 sm:p-12">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 text-left">
+          <div>
+            <h3 class="text-xl font-semibold text-blue-600 mb-2">📧 Email</h3>
+            <p class="text-gray-700">
+              <a
+                href="mailto:contact@simplestore.com"
+                class="hover:text-blue-600 transition"
+                >contact@simplestore.com</a
+              >
+            </p>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold text-blue-600 mb-2">📍 Location</h3>
+            <p class="text-gray-700">123 Online St, Web City, IN 12345</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white text-center py-4">
+    <p>© 2025 SimpleStore. All rights reserved.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
